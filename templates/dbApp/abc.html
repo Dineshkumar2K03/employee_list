@@ -1,0 +1,16 @@
+<html>
+{% load static%}
+<body>
+    {% if emp_data %}
+<table>
+   <tr>{% for employee in emp_list %}
+   <td>{{emp_list.empNo}}</td>
+   <td>{{emp_list.empName}}</td>
+   <td>{{emp_list.empSalary}}</td>
+   <td>{{emp_list.empAddress}}</td>
+   </tr>
+   {%endfor %}
+   {% endif%}
+</table>
+</body>
+</html>
